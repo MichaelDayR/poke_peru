@@ -9,3 +9,6 @@ if (parseInt(edad) < 18) {
     // Si es mayor o igual a 18, permitir el acceso
     document.write('¡Bienvenido! Puedes acceder.');
 }
+if (parseInt(edad) < 18) {
+    document.body.style.backgroundColor = "red";
+}
