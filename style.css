@@ -34,10 +34,10 @@ h2 {
 
 }
 .imagenes {
+    img: hover;
     margin: auto;
     justify-content: center;
     align-self: center;
-
 }
 ul {
     margin: auto;
@@ -51,7 +51,7 @@ form {
     display: block;
 }
 footer {
-    width: 1180px;
+    width: 580px;
     height: 70px;
     vertical-align: bottom;
     padding-right: 100%;
@@ -59,8 +59,11 @@ footer {
     padding: 60px;
     float: left;
     background-color: #419eaf;
+    display: flex; /* Make the footer container use flexbox */
+    justify-content: space-between; /* Align items at opposite ends */
+    align-items: center; /* Align items vertically in the flex container */
 }
-img:hover{
-    cursor: pointer;
-    border: 5px #ffffffe0 solid;
-}
+/*#icon {
+    float: right;
+    margin-bottom: 100px;
+}*/
