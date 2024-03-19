@@ -5,8 +5,22 @@ function saludar() {
 
     // Verificar si se ingresó un nombre
     if (nombre.trim() !== "") {
-        alert ("¡Hola, " + nombre + "!");
+        // Obtener la hora actual del ordenador del usuario
+        var hora = new Date().getHours();
+        
+        // Determinar si es AM o PM
+        var saludo;
+        if (hora < 12) {
+            saludo = "Buenos días";
+        } else if (hora >= 12 && hora < 18) {
+            saludo = "Buenas tardes";
+        } else {
+            saludo = "Buenas noches";
+        }
+
+        // Mostrar el saludo
+        alert(saludo + ", " + nombre + "!");
     } else {
-        alert ("Por favor, ingresa tu nombre.");
+        alert("Por favor, ingresa tu nombre.");
     }
 }
