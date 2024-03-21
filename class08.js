@@ -24,6 +24,11 @@ function pintarImagenes(imageUrl, numImages) {
       image.src = imageUrl;
       image.alt = 'Pokemon Image';
       document.body.appendChild(image);
+      const counter = document.createElement('div');
+      counter.textContent = i+1
+      document.body.appendChild(counter);
+
+
     }
   }
   
@@ -32,4 +37,6 @@ function pintarImagenes(imageUrl, numImages) {
   const numImages =  evoluciones; // Change this to desired number of images
   
   pintarImagenes(imageUrl, numImages);
+
+  
   
