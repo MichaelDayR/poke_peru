@@ -12,3 +12,11 @@ if (parseInt(edad) < 18) {
 if (parseInt(edad) < 18) {
     document.body.style.backgroundColor = "red";
 }
+let userConfirm = confirm("estás seguro?");
+console.log(userConfirm);
+
+if (userConfirm) {
+    console.log("ACEPTO!!!");
+} else {
+    console.log("CANCELO!!!");
+}
